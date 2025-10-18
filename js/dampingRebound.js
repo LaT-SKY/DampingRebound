@@ -6,7 +6,7 @@ export function bindDampingRebound(element, targetX, targetY, options = {}){
 		precision: 0.1,
 		...options
 	};
-	
+
 	if (element._dampingAnimationId){
 		cancelAnimationFrame(element._dampingAnimationId);
 	}
@@ -35,7 +35,7 @@ export function bindDampingRebound(element, targetX, targetY, options = {}){
 		
 		velocityX += accelerationX * deltaTime;
 		velocityY += accelerationY * deltaTime;
-		
+	
 		currentX += velocityX * deltaTime;
 		currentY += velocityY * deltaTime;
 		
